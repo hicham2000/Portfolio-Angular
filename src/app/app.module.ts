@@ -10,6 +10,7 @@ import { ProfilComponent } from './profil/profil.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CertificateComponent } from './certificate/certificate.component';
 import { ContactComponent } from './contact/contact.component';
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 @NgModule({
   declarations: [
@@ -22,10 +23,10 @@ import { ContactComponent } from './contact/contact.component';
     CertificateComponent,
     ContactComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
