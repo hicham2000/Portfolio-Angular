@@ -11,6 +11,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CertificateComponent } from './certificate/certificate.component';
 import { ContactComponent } from './contact/contact.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import { ButtonsComponent } from './buttons/buttons.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
     ProfilComponent,
     PortfolioComponent,
     CertificateComponent,
-    ContactComponent
+    ContactComponent,
+    ButtonsComponent
   ],
     imports: [
         BrowserModule,

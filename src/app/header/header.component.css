@@ -1,4 +1,4 @@
-li a {
+ a {
   color: #7C30D8;
   font-family: Verdana;
 }
@@ -6,3 +6,11 @@ li a {
   border: 2px #7c30d8 solid;
 
 }
+
+.orange{
+  color: #fe9c15;
+}
+a:hover{
+  color: #FE9C15;
+}
+
