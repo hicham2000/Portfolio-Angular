@@ -6,3 +6,49 @@ h1{
   font-weight: 900;
   color: #7c30d8;
 }
+
+h3{
+  color: #FE9C15;
+  font-weight: bold;
+}
+
+p{
+
+  font-weight: 500;
+}
+
+.Resume{
+background-color: #7c30d8;
+  border: none;
+}
+.Resume a{
+  color: white;
+  font-weight: 900;
+}
+a{
+  text-decoration: none;
+}
+
+.contact{
+  border: none;
+  background-color: white;
+}
+
+.contact a{
+  color: #7c30d8;
+  font-weight: 900;
+}
+
+#home::before{
+  content: "";
+  width: 600px;
+  height: 600px;
+  background-color: #ffedd6;
+  border-radius: 50%;
+  position: absolute;
+  left: -100px;
+  top: -100px;
+  z-index: -1;
+}
+
+
