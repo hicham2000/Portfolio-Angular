@@ -10,9 +10,9 @@ import { ProfilComponent } from './profil/profil.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CertificateComponent } from './certificate/certificate.component';
 import { ContactComponent } from './contact/contact.component';
-import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { ButtonsComponent } from './buttons/buttons.component';
 import { DropDirective } from './drop.directive';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,8 @@ import { DropDirective } from './drop.directive';
   ],
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+        FontAwesomeModule
     ],
   providers: [],
   bootstrap: [AppComponent]
