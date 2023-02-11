@@ -12,6 +12,7 @@ import { CertificateComponent } from './certificate/certificate.component';
 import { ContactComponent } from './contact/contact.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { ButtonsComponent } from './buttons/buttons.component';
+import { DropDirective } from './drop.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ButtonsComponent } from './buttons/buttons.component';
     PortfolioComponent,
     CertificateComponent,
     ContactComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    DropDirective
   ],
     imports: [
         BrowserModule,

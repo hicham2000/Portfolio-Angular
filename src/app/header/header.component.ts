@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  valid:boolean=true;
+  onclick(){
+    let div= document.getElementById('header');
+
+   // @ts-ignore
+    this.valid ? div.classList.add("show"):div.classList.remove("show");
+    this.valid = !this.valid;
+  }
 }
