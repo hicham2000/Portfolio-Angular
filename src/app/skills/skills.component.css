@@ -1,0 +1,17 @@
+img{
+  width: 90px;
+  height: 90px;
+
+}
+
+.skills::before{
+  content: "";
+  width: 22rem;
+  height: 22rem;
+  background-color: #ffedd6;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  left: 15%;
+  top: 35%;
+}
