@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {faEarthAfrica} from '@fortawesome/free-solid-svg-icons';
+import {DropdownService} from "../dropdown.service";
 
 @Component({
   selector: 'app-header',
@@ -16,5 +17,16 @@ export class HeaderComponent {
    // @ts-ignore
     this.valid ? div.classList.add("show"):div.classList.remove("show");
     this.valid = !this.valid;
+  }
+
+  constructor(private dropdown: DropdownService) {
+  }
+
+  onmove(){
+    let div= document.getElementById('header');
+    // @ts-ignore
+    div.classList.remove("show");
+    this.valid = !this.valid;
+
   }
 }

@@ -1,1 +1,21 @@
-<p>contact works!</p>
+<div id="contact" class="h-100" >
+  <div class="alert alert-success" *ngIf="sent">Message sent</div>
+  <form (ngSubmit)="onsubmit(f)"  #f="ngForm">
+    <div class="row mw-100">
+      <input type="text" class="contact col-12 col-md m-4 rounded pt-2 pb-2 " id="username" name="name" ngModel required placeholder="Full name">
+      <input type="text" class="contact col-12 col-md m-4 rounded pt-2 pb-2 " id="email" name="email" ngModel required email placeholder="Email">
+
+    </div>
+    <div class="row mw-100">
+      <input type="number" class="contact col-12 col-md m-4 rounded pt-2 pb-2 " name="phone" ngModel  id="phone" placeholder="Phone(optional)">
+      <input type="text" class="contact col-12 col-md m-4 rounded pt-2 pb-2 " name="subject" ngModel required  id="subject" placeholder="Subject">
+    </div>
+    <div class="row mw-100 text-center ps-4 ps-md-0 m-auto align-content-center">
+      <textarea class="col rounded  m-2  contacttext w-100" id="message" rows="5" name="message" required  ngModel  placeholder="writte your message....."></textarea>
+    </div>
+
+    <button type="submit" [disabled]="!f.valid"  class="m-3" id="submitbtn">SEND</button><fa-icon *ngIf="f.valid" class="true fs-5" [icon]="faCheck"></fa-icon><fa-icon *ngIf="!f.valid" class="false fs-5" [icon]="faCircleXmark"></fa-icon>
+
+  </form>
+</div>
+

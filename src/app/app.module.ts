@@ -13,24 +13,21 @@ import { ContactComponent } from './contact/contact.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { DropDirective } from './drop.directive';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent,
-    SkillsComponent,
     ProfilComponent,
-    PortfolioComponent,
-    CertificateComponent,
-    ContactComponent,
     ButtonsComponent,
     DropDirective
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        FontAwesomeModule
+        FontAwesomeModule,
+        FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

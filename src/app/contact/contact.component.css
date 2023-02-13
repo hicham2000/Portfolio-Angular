@@ -1,0 +1,58 @@
+input,textarea{
+  border: #7c30d8 2px solid;
+}
+
+#contact{
+  background-image: url("../../assets/images/Feedback-amico.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+#submitbtn{
+  color: white;
+  background-color: #7c30d8;
+  padding: 8px;
+  border-radius: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: sans-serif;
+  border-radius: 7px;
+  border: 2px #7c30d8 solid;
+  font-family: 'Poppins', sans-serif;
+}
+
+#contact::before{
+  content: "";
+  width: 700px;
+  height: 700px;
+  background-color: #ffedd6;
+  border-radius: 50%;
+  position: absolute;
+  left: -300px;
+  top: -260px;
+  z-index: -1;
+}
+
+input.ng-invalid.ng-touched{
+  border: red 2px solid;
+}
+
+input.ng-valid.ng-touched{
+  border: green 2px solid;
+}
+textarea.ng-invalid.ng-touched{
+  border: red 2px solid;
+}
+
+textarea.ng-valid.ng-touched{
+  border: green 2px solid;
+}
+
+.true{
+  color: green;
+}
+
+.false{
+
+  color: red;
+}
