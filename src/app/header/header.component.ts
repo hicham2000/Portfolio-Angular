@@ -11,7 +11,6 @@ import {state, trigger} from "@angular/animations";
 })
 export class HeaderComponent {
   faEarthAfrica = faEarthAfrica;
-
   @ViewChild('header') header!:ElementRef;
 
   valid:boolean=true;
