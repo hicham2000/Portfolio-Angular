@@ -17,7 +17,6 @@ export class HeaderComponent {
 
 
 
-
    //  let div= document.getElementById('header');
    //
    // // @ts-ignore
