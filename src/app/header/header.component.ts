@@ -15,8 +15,6 @@ export class HeaderComponent {
   valid:boolean=true;
   onclick(){
 
-
-
    //  let div= document.getElementById('header');
    //
    // // @ts-ignore
